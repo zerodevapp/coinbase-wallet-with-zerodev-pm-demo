@@ -3,8 +3,8 @@
 import { useAccount, useConnect, useDisconnect } from "wagmi";
 import { useCapabilities, useWriteContracts } from "wagmi/experimental";
 import { useMemo, useState } from "react";
-import { CallStatus } from "./components/CallStatus";
-import { myNFTABI, myNFTAddress } from "./myNFT";
+import { CallStatus } from "../components/CallStatus";
+import { myNFTABI, myNFTAddress } from "../myNFT";
 
 export default function Page() {
   const { address, chainId, isConnected } = useAccount();
