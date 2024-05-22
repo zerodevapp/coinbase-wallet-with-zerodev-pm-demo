@@ -26,5 +26,5 @@ export function CallStatus({ id }: CallStatusProps): JSX.Element {
     },
   }) as UseCallsStatusReturnType;
 
-  return <div>Status: {callsStatus?.status ?? 'loading'}</div>;
+  return <div className='text-lg font-semibold mb-2 text-gray-800'>Status: {callsStatus?.status ?? 'loading'}</div>;
 }

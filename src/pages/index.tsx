@@ -38,10 +38,14 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-gray-100 p-6">
       <div className="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-6">
-        <h2 className="text-2xl font-bold mb-4">Transact With Paymaster</h2>
+        <h2 className="text-2xl font-bold mb-4 text-gray-900">
+          Transact With Paymaster
+        </h2>
         <div className="mb-4 p-4 bg-gray-50 rounded-lg">
-          <h3 className="text-lg font-semibold mb-2">Capabilities</h3>
-          <ul className="list-disc list-inside">
+          <h3 className="text-lg font-semibold mb-2 text-gray-800">
+            Capabilities
+          </h3>
+          <ul className="list-disc list-inside text-gray-700">
             {Object.entries(capabilities).map(([key, value]) => (
               <li key={key} className="mb-1">
                 <span className="font-medium">{key}:</span>{" "}
@@ -52,7 +56,9 @@ export default function Page() {
         </div>
         <div className="space-y-6">
           <div>
-            <h2 className="text-xl font-semibold mb-2">Connect</h2>
+            <h2 className="text-xl font-semibold mb-2 text-gray-900">
+              Connect
+            </h2>
             <div className="space-y-2">
               {connectors.map((connector) => (
                 <button
@@ -70,7 +76,7 @@ export default function Page() {
           </div>
           {isConnected && address && (
             <div className="bg-gray-50 p-4 rounded-lg">
-              <div className="mb-2 font-mono">{address}</div>
+              <div className="mb-2 font-mono text-gray-800">{address}</div>
               <button
                 onClick={() => disconnect()}
                 className="py-2 px-4 bg-red-500 text-white rounded-lg hover:bg-red-600"
