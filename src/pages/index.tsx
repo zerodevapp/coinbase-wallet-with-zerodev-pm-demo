@@ -28,7 +28,7 @@ export default function Page() {
     ) {
       return {
         paymasterService: {
-          url: `https://rpc.zerodev.app/api/v3-alpha/paymaster/2b7f65cc-ad39-4c36-a12c-799ff9e6556a`,
+          url: `https://rpc.zerodev.app/api/v3-alpha/paymaster/9c00e33d-d76d-4f83-8668-f13659dac9fb`,
         },
       };
     }
